@@ -15,7 +15,19 @@ public class Ecommerce {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Order ord = new Order();
+        ord.calcSubTotal();
+        
+        OrderDetail ordDet = new OrderDetail();
+        ordDet.calcWeight();
+        
+        Customer cust = new Customer();
+        cust.setAddress("Montreal");
+        System.out.println(cust.getAddress());
+        
+        Payment pay = new Payment();
+        pay.setAmount(99);
+        System.out.println(pay.getAmount());
     }
     
 }
