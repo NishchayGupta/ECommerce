@@ -11,7 +11,8 @@ package ecommerce;
  */
 public class Payment {
     private float amount;
-
+    Order ord = new Order(); 
+    
     public void setAmount(float newAmount) {
         amount = newAmount;
     }
