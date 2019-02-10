@@ -12,8 +12,8 @@ package ecommerce;
 public class Payment {
     private float amount;
 
-    public void setAmount(float amount) {
-        this.amount = amount;
+    public void setAmount(float newAmount) {
+        amount = newAmount;
     }
 
     public float getAmount() {
